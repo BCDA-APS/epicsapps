@@ -1,0 +1,31 @@
+name: epicsapps
+
+# conda env create -f environment.yml
+# conda activate epicsapps
+# conda env remove -n epicsapps
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python >=3.7
+  - six>1.11
+  - numpy>=1.15
+  - wxmplot>=0.9.38
+  - wxpython>=4.0.3
+  - wxutils>=0.2.3
+  - matplotlib>=3.0
+  - sqlalchemy>=0.9
+  - lmfit>=0.9.13
+  - pyshortcuts>=1.6
+  - pyepics>=3.4.0
+  - yaml
+  - requests
+  - xraydb
+  - pip
+  - pillow
+  - pyfai
+
+  - pip:
+    - versioneer
