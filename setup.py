@@ -16,7 +16,7 @@ for pname in find_packages('epicsapps'):
 package_data = ['icons/*']
 
 # list of top level scripts to add to Python's bin/
-apps = ['epicsapps = epicsapps:run_epicsapps']
+apps = ['run_epicsapps = epicsapps.apps:run_epicsapps']
 
 setup(name = 'epicsapps',
       version = versioneer.get_version(),
