@@ -176,3 +176,7 @@ notes:
             fapp = run_adviewer
         if fapp is not None:
             fapp(configfile=args.filename, prompt=args.prompt)
+
+
+if __name__ == "__main__":
+    run_epicsapps()
