@@ -2,6 +2,9 @@ name: epicsapps
 
 # conda env create -f environment.yml
 # conda activate epicsapps
+# run_epicsapps stripchart
+# https://pyepics.github.io/epicsapps/stripchart.html
+
 # conda env remove -n epicsapps
 
 channels:
@@ -10,22 +13,23 @@ channels:
 
 dependencies:
   - python >=3.7
-  - six>1.11
+  - lmfit>=0.9.13
+  - matplotlib>=3.0
   - numpy>=1.15
+  - pillow
+  - pip
+  - pyepics>=3.4.0
+  - pyfai
+  - pyshortcuts>=1.6
+  - requests
+  - six>1.11
+  - sqlalchemy>=0.9
   - wxmplot>=0.9.38
   - wxpython>=4.0.3
   - wxutils>=0.2.3
-  - matplotlib>=3.0
-  - sqlalchemy>=0.9
-  - lmfit>=0.9.13
-  - pyshortcuts>=1.6
-  - pyepics>=3.4.0
-  - yaml
-  - requests
   - xraydb
-  - pip
-  - pillow
-  - pyfai
+  - yaml
 
   - pip:
     - versioneer
+    - git+https://github.com/BCDA-APS/epicsapps.git#egg=epicsapps
